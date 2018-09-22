@@ -1,0 +1,22 @@
+{
+  "name": "thing-it-device-plant-probe",
+  "version": "0.0.1",
+  "description": "[thing-it-node] Device Plugin for Plant Probes.",
+  "authors": "Marc Gille",
+  "keywords": [
+    "IoT",
+    "thing-it",
+    "Plant",
+    "Gardening"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcgille/thing-it-device-xiaomi-smart-plant-monitor"
+  },
+  "dependencies": {
+    "q": "^1.5.0"
+  },
+  "devDependencies": {
+    "thing-it-test": "0.0.21"
+  }
+}
