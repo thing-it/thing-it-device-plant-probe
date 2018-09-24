@@ -2,8 +2,8 @@ module.exports = {
     metadata: {
         family: 'plantMonitor',
         plugin: 'plantMonitor',
-        label: 'Xiaomi Plant Monitor',
-        manufacturer: 'Xiaomi',
+        label: 'Plant Probe',
+        manufacturer: 'Generic',
         discoverable: false,
         tangible: true,
         additionalSoftware: [],
