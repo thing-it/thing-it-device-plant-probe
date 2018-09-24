@@ -1,7 +1,7 @@
 module.exports = {
     metadata: {
-        family: 'plantMonitor',
-        plugin: 'plantMonitor',
+        family: 'plantProbe',
+        plugin: 'plantProbe',
         label: 'Plant Probe',
         manufacturer: 'Generic',
         discoverable: false,
