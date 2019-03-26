@@ -9,6 +9,9 @@
     "Plant",
     "Gardening"
   ],
+  "scripts": {
+    "ui-test": "node ./node_modules/thing-it-test/bin/server.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/marcgille/thing-it-device-xiaomi-smart-plant-monitor"
@@ -17,6 +20,6 @@
     "q": "^1.5.0"
   },
   "devDependencies": {
-    "thing-it-test": "0.0.21"
+    "thing-it-test": "0.0.31"
   }
 }
