@@ -11,7 +11,7 @@ module.exports = {
     devices: [{
         label: "Plant Probe Rhododendron",
         id: "plantProbeRhododendron",
-        plugin: "plant-probe/plantProbe",
+        plugin: "plantProbe/plantProbe",
         configuration: {},
         actors: [],
         sensors: []

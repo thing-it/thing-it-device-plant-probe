@@ -6,7 +6,7 @@ describe('Thing-it Plant Monitor Probe', function () {
     before(function () {
         testDriver = require("thing-it-test").createTestDriver({logLevel: "debug", simulated: false});
 
-        testDriver.registerDevicePlugin('plant-probe', __dirname + "/../plantProbe");
+        testDriver.registerDevicePlugin('plantProbe', __dirname + "/../plantProbe");
     });
     describe('Start Configuration', function () {
         this.timeout(30000);
