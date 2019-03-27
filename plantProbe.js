@@ -104,7 +104,14 @@ function PlantProbe() {
             return;
         }
 
-        this.state = state;
+        const newState = Object.assign(
+            {},
+            this.state,
+            {
+                health: state.health,
+                height: state.height,
+            });
+        this.state = newState;
 
         if (!this.isSimulated()) {
             // TODO Save to Gateway local storage
