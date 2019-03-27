@@ -98,10 +98,17 @@ function PlantProbe() {
      *
      */
     PlantProbe.prototype.setState = function (state) {
+        if (this.state && this.state.height === state.height && this.state.health === state.health) {
+            // identical state, ignoring
+            this.logDebug('Ignoring setState invocation as new state is identical to old state');
+            return;
+        }
+
         this.state = state;
 
         if (!this.isSimulated()) {
             // TODO Save to Gateway local storage
+            this.publishStateChange();
         }
     };
 }
