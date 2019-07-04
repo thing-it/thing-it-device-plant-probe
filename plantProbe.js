@@ -57,15 +57,31 @@ function PlantProbe() {
     PlantProbe.prototype.start = function () {
         var deferred = q.defer();
 
+        this.operationalState = {
+            status: 'PENDING',
+            message: 'Waiting for initialization...'
+        };
+        this.publishOperationalStateChange();
+
         this.state = {};
 
         if (this.isSimulated()) {
+            this.operationalState = {
+                status: 'OK',
+                message: 'Plant probe successfully initialized in simulated mode'
+            }
+            this.publishOperationalStateChange();
             deferred.resolve();
         } else {
             if (!this.isSimulated()) {
                 // TODO Save to Gateway local storage
             }
 
+            this.operationalState = {
+                status: 'OK',
+                message: 'Plant probe successfully initialized'
+            }
+            this.publishOperationalStateChange();
             deferred.resolve();
         }
 
